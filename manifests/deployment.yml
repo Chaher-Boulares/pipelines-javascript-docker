@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: chaherboularespipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: chaherboularespipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: chaherboularespipelinesjavascriptdocker 
+          image: mycontainerrregistry.azurecr.io/chaherboularespipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
